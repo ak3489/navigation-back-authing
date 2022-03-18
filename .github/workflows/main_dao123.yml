@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'dao123'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B73CF90ECD00402FA9ADE65DDBD71FDE }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B8A3A38D739545F3BD60EB5E57F533A0 }}
           package: .
