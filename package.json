@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "PORT=8072 nodemon ./bin/www",
+    "start": "node app.js",
+    "start-linux": "PORT=8072 nodemon ./bin/www",
     "start-win": "set PORT=8072 && nodemon ./bin/www"
   },
   "dependencies": {
