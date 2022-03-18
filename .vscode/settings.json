@@ -2,5 +2,7 @@
     "appService.zipIgnorePattern": [
         "node_modules{,/**}",
         ".vscode{,/**}"
-    ]
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/c3ea1603-f81c-44dd-af33-c717b4ba614c/resourceGroups/dao123_group-9b2e/providers/Microsoft.Web/sites/daonode",
+    "appService.deploySubpath": "."
 }
