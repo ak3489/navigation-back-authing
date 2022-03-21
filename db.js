@@ -2,7 +2,8 @@ const config = require('./config')
 require('dotenv').config();
 const mongoose = require('mongoose')
 // mongoose.connect('mongodb://mybook:swen123456@115.159.3.227:27018/mybook', {useNewUrlParser: true,useUnifiedTopology: true})
-mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+// mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(config.dbLink, { useNewUrlParser: true, useUnifiedTopology: true })
 const db = mongoose.connection
 db.once('error', err => console.log('Mongo connection error',err))
 db.once('open', () => console.log('Mongo connection successed'))
